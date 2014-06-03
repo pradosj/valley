@@ -1,3 +1,4 @@
 useDynLib(valley)
 exportPattern("^[[:alpha:]]+")
+import(Rcpp)
 
