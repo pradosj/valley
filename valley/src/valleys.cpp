@@ -28,13 +28,17 @@ IntegerVector valleysG(NumericVector x,IntegerMatrix edges) {
 
 
   // Sort edges in decreasing order considering their lowest value first
-  IntegerVector edges_order = seq_len(edges.nrow())-1;
+  std::vector<int> edges_order(edges.nrow());
+  int k=0;
+  std::generate(edges_order.begin(),edges_order.end(),[&]{return k++;});
   std::sort(edges_order.begin(),edges_order.end(),[&x,&edges](int a,int b) {return make_sorted_pair(x[edges(a,0)-1],x[edges(a,1)-1]) > make_sorted_pair(x[edges(b,0)-1],x[edges(b,1)-1]);});
 
 
   // Iterate over sorted collection of edges to cluster nodes and compute the valleys
-  IntegerVector val(x.length(),NA_INTEGER);
-  IntegerVector top=seq_along(x)-1;
+  std::vector<int> top(x.length()); // path to the highest point in the cluster
+  k=0;
+  std::generate(top.begin(),top.end(),[&]{return k++;});
+  IntegerVector val(x.length(),NA_INTEGER); // index of the valley of each point
   for(auto i:edges_order) {
     auto e=std::make_pair(edges(i,0)-1,edges(i,1)-1);
     
