@@ -3,36 +3,29 @@
 \alias{valley}
 \docType{package}
 \title{
-What the package does (short line)
+Various function for signal processing originaly tested on mass spectrometry data
 }
 \description{
-More about what it does (maybe more than one line)
-~~ A concise (1-5 lines) description of the package ~~
+Various function for signal processing originaly tested on mass spectrometry data.
 }
 \details{
 \tabular{ll}{
 Package: \tab valley\cr
 Type: \tab Package\cr
 Version: \tab 1.0\cr
-Date: \tab 2013-08-14\cr
-License: \tab What license is it under?\cr
+Date: \tab 2014-05-03\cr
+License: \tab GPL-3 \cr
 }
-~~ An overview of how to use the package, including the most important functions ~~
 }
 \author{
-Who wrote it
+Julien Prados
 
-Maintainer: Who to complain to <yourfault@somewhere.net>
+Maintainer: Julien Prados <julien.pradost@unige.ch>
 }
 \references{
-~~ Literature or other references for background information ~~
+On Preprocessing of SELDI-MS Data and its Evaluation. Julien Prados, Alexandros Kalousis, Melanie Hilario. Computer-Based Medical Systems, 2006.
 }
-~~ Optionally other standard keywords, one per line, from file KEYWORDS in the R documentation directory ~~
 \keyword{ package }
 \seealso{
-~~ Optional links to other man pages, e.g. ~~
-~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
-}
-\examples{
-%% ~~ simple examples of the most important functions ~~
+\code{\link{valleys}} ~~
 }
