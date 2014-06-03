@@ -24,7 +24,7 @@ IntegerVector valleysG(NumericVector x,IntegerMatrix edges) {
   if (is_true(any(is_na(x)))) throw Rcpp::exception("NA not allowed in x");
   if (edges.ncol()!=2) throw Rcpp::exception("edges must be an integer matrix of 2 columns");
   if (is_true(any(is_na(edges)))) throw Rcpp::exception("NA note allowed in edges");
-  if (max(edges)<1 || max(edges)>x.length()) throw Rcpp::exception("edges contains out of range integers");    
+  if (min(edges)<1 || max(edges)>x.length()) throw Rcpp::exception("edges contains out of range integers");
 
 
   // Sort edges in decreasing order considering their lowest value first
