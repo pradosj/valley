@@ -1,0 +1,10 @@
+.Rproj.user
+.Rhistory
+.RData
+valley/man/valleys.Rd
+valley/man/valleysG.Rd
+valley/R/RcppExports.R
+valley/src/RcppExports.cpp
+valley/src/*.o
+valley/src/*.so
+valley/src/*.dll
