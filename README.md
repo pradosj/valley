@@ -11,8 +11,9 @@ and also makes use of roxygene2 to generate its documentation from source code.
 Installation
 ---------------
 To install the package you can either load the Rstudio project and run Build, or run the commands:
-  Rcpp::compileAttributes()
-  roxygenize('valley')
-  R CMD INSTALL valley
+
+    Rcpp::compileAttributes()
+    roxygenize('valley')
+    R CMD INSTALL valley
 
 
