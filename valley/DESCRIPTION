@@ -1,0 +1,16 @@
+Package: valley
+Type: Package
+Title: Valley Segmentation, and Peak Detection
+Version: 1.0
+Date: 2013-08-14
+Author: Julien Prados
+Maintainer: Julien Prados <julien.prados@unige.ch>
+Copyright: 2013, University of Geneva
+Description: Efficiently find valleys of a 1D vector or a 2D matrix. A valley
+    of a given point, p, is defined has the highest intensity point, v, between
+    p and another point having a higher intensity than p. This information may
+    be used to perform image segmentation.
+License: GPL-3
+Depends:
+    Rcpp (>= 0.10.4)
+LinkingTo: Rcpp

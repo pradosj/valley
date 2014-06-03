@@ -1,0 +1,3 @@
+useDynLib(valley)
+exportPattern("^[[:alpha:]]+")
+
