@@ -7,6 +7,7 @@
 
 using namespace Rcpp;
 
+// [[Rcpp::plugins(cpp11)]]
 
 
 template<class Tx,class Ty> std::pair<Tx,Ty> make_sorted_pair(Tx x,Ty y) {return (x<y)?std::make_pair(x,y):std::make_pair(y,x);}
