@@ -27,5 +27,6 @@ On Preprocessing of SELDI-MS Data and its Evaluation. Julien Prados, Alexandros 
 }
 \keyword{ package }
 \seealso{
-\code{\link{valleys}} ~~
+\code{\link{valleys}}
+\code{\link{nhclust}}
 }
